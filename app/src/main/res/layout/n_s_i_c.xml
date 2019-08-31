@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="16dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    card_view:cardElevation="2dp"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/member_name"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#606060"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Octoriz"/>
+
+        <TextView
+            android:textColor="#777777"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:id="@+id/notification_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            tools:text="You have a new message. You have a new message. You have a new message. You have a new message. You have a new message. You have a new message. You have a new message. You have a new message. You have a new message." />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginLeft="0dp"-->
+        <!--android:layout_marginRight="0dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="15dp"-->
+        <!--android:background="#EEEEEE" />-->
+
+
+        <LinearLayout
+            android:background="#66BDF1"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Received"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingTop="6dp"
+                    android:id="@+id/received_time"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:text="10:00 PM"/>
+                <TextView
+                    android:id="@+id/received_date"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:text="22/22/2022 "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Seen"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/seen_time"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:paddingTop="6dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:text="10:00 AM"/>
+
+                <TextView
+                    android:id="@+id/seen_date"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:text="22/22/2022"/>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Company"-->
+                    <!--android:textColor="#FFFFFF"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/member_name"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textColor="#69747D"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Octoriz"/>-->
+            <!--</LinearLayout>-->
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

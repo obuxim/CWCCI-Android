@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/notification_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="16sp"
+            tools:text="You have a new message. You have a new message. You have a new message. You have a new message. You have a new message. You have a new message. You have a new message. You have a new message. You have a new message." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="#EEEEEE" />
+
+
+        <LinearLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Received"
+                    android:textColor="#e84118"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/received_time"
+                    android:gravity="center"
+                    android:textColor="#e84118"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:text="10:00 PM"/>
+                <TextView
+                    android:id="@+id/received_date"
+                    android:gravity="center"
+                    android:textColor="#e84118"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:text="22/22/2022 "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="#44bd32"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Seen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/seen_time"
+                    android:gravity="center"
+                    android:textColor="#44bd32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:text="10:00 AM"/>
+
+                <TextView
+                    android:id="@+id/seen_date"
+                    android:gravity="center"
+                    android:textColor="#44bd32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:text="22/22/2022"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Company"
+                    android:textColor="#3194DD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/member_name"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#3194DD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Octoriz"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
